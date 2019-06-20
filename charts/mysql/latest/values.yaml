@@ -34,16 +34,16 @@ nodeSelector: {}
 tolerations: []
 
 livenessProbe:
-  initialDelaySeconds: 30
+  initialDelaySeconds: 110
   periodSeconds: 10
   timeoutSeconds: 5
   successThreshold: 1
   failureThreshold: 3
 
 readinessProbe:
-  initialDelaySeconds: 20
+  initialDelaySeconds: 100
   periodSeconds: 10
-  timeoutSeconds: 1
+  timeoutSeconds: 5
   successThreshold: 1
   failureThreshold: 3
 
