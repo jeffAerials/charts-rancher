@@ -7,12 +7,12 @@ imageTag: "5.7.14"
 ## Specify password for root user
 ##
 ## Default: random 10 character string
-mysqlRootPassword: testing
+mysqlRootPassword: testing-password
 
 ## Create a database user
 ##
-mysqlUser: user
-mysqlPassword: testing-password
+# mysqlUser: user
+# mysqlPassword: testing-password
 
 ## Allow unauthenticated access, uncomment to enable
 ##
