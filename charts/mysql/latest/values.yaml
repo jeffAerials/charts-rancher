@@ -66,14 +66,16 @@ persistence:
 ##
 resources:
   requests:
-    memory: 256Mi
+    memory: 1024Mi
     cpu: 100m
 
 # Custom mysql configuration files used to override default mysql settings
 configurationFiles:
-#  mysql.cnf: |-
-#    [mysqld]
-#    skip-name-resolve
+  mysql.cnf: |-
+    [mysqld]
+    innodb_log_file_size=512M
+    max_allowed_packet=512M
+
 
 
 ## Configure the service
